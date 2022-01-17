@@ -1,0 +1,13 @@
+{
+  "Db": {
+    "dsn": "mysql:host=localhost;dbname=domain_checker",
+    "user": "root",
+    "passwd": ""
+  },
+  "Rabbit": {
+    "host": "localhost",
+    "port": 5672,
+    "user": "guest",
+    "passwd": "guest"
+  }
+}

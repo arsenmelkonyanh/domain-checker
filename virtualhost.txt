@@ -1,0 +1,23 @@
+<VirtualHost *:80>
+		SetEnv ENVIRONMENT development
+    ServerAdmin arsen.melkonyan@naghashyan.com
+    DocumentRoot "C:/7.4.6/xampp/htdocs/domain-checker"
+
+    <Directory "C:/7.4.6/xampp/htdocs/domain-checker">
+  		Options FollowSymLinks
+      AllowOverride All
+      Order allow,deny
+      allow from all
+      Require all granted
+		</Directory>
+
+		RewriteEngine On
+		RewriteRule ^index\.php$ - [L]
+		RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+		RewriteRule . /index.php [L]
+
+    ServerName domain-checker.am
+    ServerAlias www.domain-checker.am
+    ErrorLog "logs/domain-checker.am.am-error.log"
+    CustomLog "logs/domain-checker.am.am.com-access.log" common
+</VirtualHost>

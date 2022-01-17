@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php-amqplib/php-amqplib": "^3.0",
+        "monolog/monolog": "^2.3",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DomainChecker\\": "classes/"
+        }
+    }
+}

@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.result-content {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.result-content .header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    border-bottom: 2px solid #cdcdcd;
+}
+
+.result-content .domains-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-content .domains-container .domain-row {
+    display: table-row;
+}
+
+.result-content .domains-container .domain-row-group {
+    display: table-row-group;
+}
+
+.result-content .domains-container .domain-row.header-row .cell {
+    background-color: #efefef;
+    font-weight: 600;
+}
+
+.result-content .domains-container .domain-row .cell {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #cdcdcd;
+    padding: 7px 10px ;
+}
+
+.result-content .domains-container .domain-row .id-cell {
+    width: 100px;
+}
+
+.result-content .domains-container .domain-row .domain-cell {
+    width: 100%;
+}
+
+.result-content .domains-container .domain-row .validity-cell {
+    width: 100px;
+    text-align: center;
+}
+
+.result-content .domains-container .domain-row .validity-cell .invalid {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.result-content .domains-container .domain-row .validity-cell .invalid:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #ff0000;
+    transform: rotate(45deg);
+}
+
+.result-content .domains-container .domain-row .validity-cell .invalid:after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #ff0000;
+    transform: rotate(-45deg);
+}
+
+.result-content .domains-container .domain-row .validity-cell .valid {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.result-content .domains-container .domain-row .validity-cell .valid:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 1px;
+    width: 9px;
+    height: 2px;
+    background-color: #008000;
+    transform: rotate(45deg);
+}
+
+.result-content .domains-container .domain-row .validity-cell .valid:after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    width: 17px;
+    height: 2px;
+    background-color: #008000;
+    transform: rotate(135deg);
+}
+
+.result-content .domains-container .domain-row .expire-date-cell {
+    width: 120px;
+    text-align: center;
+}
+
+.result-content .pagination-container {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.result-content .pagination-container .pagination {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-content .pagination-container .pagination li {
+    margin: 5px;
+}
+
+.result-content .pagination-container .pagination li a {
+    display: block;
+    min-width: 10px;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.result-content .pagination-container .pagination li a:hover,
+.result-content .pagination-container .pagination li a.is--active {
+    background-color: #0000ff;
+    color: #fff;
+}

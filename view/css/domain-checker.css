@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.is--hidden {
+    display: none !important;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .upload-container {
+    max-width: 750px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+}
+
+.main-content .upload-container h1 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.main-content .upload-container .upload-form {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.main-content .upload-container .upload-form .upload-field {
+    display: flex;
+    min-height: 80px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    border: 2px dashed #cdcdcd;
+    padding: 10px;
+    position: relative;
+}
+
+.main-content .upload-container .upload-form .upload-field span {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+.main-content .upload-container .upload-form .upload-field input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.main-content .upload-container .upload-form button {
+    float: right;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 7px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.main-content .results-container {
+    display: table;
+    table-layout: fixed;
+    max-width: 750px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.main-content .results-container .result-item {
+    display: table-row;
+}
+
+.main-content .results-container .result-item:last-child .result-item-cell {
+    border-bottom: none;
+}
+
+.main-content .results-container .result-item .result-item-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 12px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.main-content .results-container .result-item .result-item-cell.title-cell {
+    width: 100%;
+}
+
+.main-content .results-container .result-item .result-item-cell.progress-cell {
+    width: 224px;
+}
+
+.main-content .results-container .result-item .result-item-cell.action-cell {
+    width: 100px;
+    text-align: center;
+}
+
+.main-content .results-container .result-item .result-item-cell.action-cell a {
+    color: #0000ff;
+}
+
+.main-content .results-container .result-item .title {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-content .results-container .result-item .progress {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #000000;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-content .results-container .result-item .progress .progress-runner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0000ff;
+    z-index: 5;
+}
+
+.main-content .results-container .result-item .progress .progress-percent {
+    position: relative;
+    z-index: 10;
+    font-weight: 600;
+}

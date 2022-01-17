@@ -1,0 +1,22 @@
+{
+  "/": {
+    "type": "load",
+    "action": "\\DomainChecker\\controllers\\domains\\DomainCheckerController"
+  },
+  "/result/([0-9]+)": {
+    "type": "load",
+    "action": "\\DomainChecker\\controllers\\domains\\DomainCheckerResultController"
+  },
+  "/create-queue": {
+    "type": "action",
+    "action": "\\DomainChecker\\actions\\queue\\CreateFilesQueueAction"
+  },
+  "/queue-progress": {
+    "type": "action",
+    "action": "\\DomainChecker\\actions\\queue\\QueueProgressAction"
+  },
+  "/set-completed-status": {
+    "type": "action",
+    "action": "\\DomainChecker\\actions\\domains\\SetCompletedStatusAction"
+  }
+}
